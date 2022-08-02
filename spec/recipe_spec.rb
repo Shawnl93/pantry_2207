@@ -22,10 +22,13 @@ describe Recipe do
   end
 
   it "can add ingredient" do
-    # require "pry"; binding.pry
     @recipe1.add_ingredient(@ingredient1, 2)
     @recipe1.add_ingredient(@ingredient1, 4)
     @recipe1.add_ingredient(@ingredient2, 8)
     expect(@recipe1.ingredients_required).to eq({})
+  end
+
+  xit "has ingredients" do
+    expect(@recipe1.ingredients).to eq()
   end
 end
