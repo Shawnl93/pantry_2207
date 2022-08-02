@@ -1,11 +1,10 @@
 class Recipe
-  attr_reader :name
+  attr_reader :name, :ingredients_required
   def initialize(name)
     @name = name
-    @ingredient_required = {}
+    @ingredients_required = {}
   end
 
-  def ingredients_required
-
+  def add_ingredient(ingredient, amount)
   end
 end

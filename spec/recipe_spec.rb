@@ -13,11 +13,19 @@ describe Recipe do
     expect(@recipe1).to be_instance_of(Recipe)
   end
 
+  it "has a name" do
+    expect(@recipe1.name).to eq("Mac and Cheese")
+  end
+
+  it "has ingredient required" do
+    expect(@recipe1.ingredients_required).to eq({})
+  end
+
   it "can add ingredient" do
-    require "pry"; binding.pry
+    # require "pry"; binding.pry
     @recipe1.add_ingredient(@ingredient1, 2)
     @recipe1.add_ingredient(@ingredient1, 4)
     @recipe1.add_ingredient(@ingredient2, 8)
-    expect(@recipe1.ingredients_required).to eq()
+    expect(@recipe1.ingredients_required).to eq({})
   end
 end
