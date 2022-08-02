@@ -11,6 +11,5 @@ class Pantry
   end
 
   def restock(ingredient, amount)
-    
   end
 end
